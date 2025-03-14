@@ -4,12 +4,18 @@ body {
     align-items: center;
     height: 90vh;
     background-color: rgb(255, 182, 193);
+    margin: 0;
+}
+
+.container {
+    position: relative; /* Container must be relative to ensure absolute positioning of the buttons */
+    text-align: center;
 }
 
 #noButton {
     position: absolute;
-    margin-left: 150px;
     transition: 0.5s;
+    margin-left: 150px;
 }
 
 #yesButton {
@@ -33,11 +39,9 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px;
-    position: relative; /* Ensure that the buttons are positioned within the container */
-    z-index: 10; /* Optional: Ensures the buttons are on top of other elements */
+    position: relative; /* Position the buttons correctly */
+    z-index: 10; /* Ensure the buttons stay above other elements */
 }
-
 
 .btn {
     background-color: #ffffff;
