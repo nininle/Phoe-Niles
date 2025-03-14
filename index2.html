@@ -8,8 +8,20 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="Ask-Her-Out-main-2/styles.css">
 
+
     <!-- External script (if you have one) -->
     <script src="script.js" defer></script>
+
+    <style>
+        /* Additional styles to ensure the buttons work properly */
+        .container {
+            position: relative;
+        }
+
+        .btn {
+            position: absolute;  /* This ensures both buttons are in the same context */
+        }
+    </style>
 
 </head>
 <body>
@@ -34,7 +46,7 @@
     <script>
         // Function for the "Yes" button to navigate to the next page
         function nextPage() {
-            window.location.href = "index2.html";  // Redirect to the second page (or to a different page)
+            window.location.href = "yes.html";  // Update this with your actual next page URL
         }
 
         // Function for the "No" button to make it move
