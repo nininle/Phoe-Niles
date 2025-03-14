@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Amor,</h1>
-                <h1 class = "header_text">¿Aceptarías ser mi novia?</h1>
-            </div>
-            <div class="gif_container">
-                <img src="misakiii.jpg">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- External script (if you have one) -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Amor,</h1>
+            <h1 class="header_text">¿Aceptarías ser mi novia?</h1>
         </div>
-       
-    </body> 
+        <div class="gif_container">
+            <img src="misakiii.jpg" alt="Image">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
+</body>
 </html>

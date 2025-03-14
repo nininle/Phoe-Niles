@@ -34,7 +34,10 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+    position: relative; /* Ensure that the buttons are positioned within the container */
+    z-index: 10; /* Optional: Ensures the buttons are on top of other elements */
 }
+
 
 .btn {
     background-color: #ffffff;
